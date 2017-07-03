@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Coffee Survey</title>
+    </head>
+    <body>
+        <h1>Coffee Survey</h1>
+
+        <form action="http://foo.com" method="POST">
+          <fieldset>
+            <legend>Contact</legend>
+            <h2>Please provide your contact information</h2>
+            <label for="name">Full Name (required)</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone">
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Survey Questions</legend>
+            <label for="coffee-style"><h2>Which style of coffee do you prefer? (Choose 1 option)</h2></label>
+            <select id="coffee-style" class="coffee-style" name="coffee-style">
+              <option value="Espresso">Espresso</option>
+              <option value="Americano">Americano</option>
+              <option value="Cappucino">Cappuccino</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <h2>Do you add anything to your coffee? (Check all that apply)</h2>
+            <label for="sugar">Sugar</label>
+            <input id="sugar" type="checkbox" name="" value="">
+            <br>
+            <label for="art-sweet">Artificial Sweetener</label>
+            <input id="art-sweet" type="checkbox" name="" value="">
+            <br>
+            <label for="cream">Cream</label>
+            <input id="cream" type="checkbox" name="" value="">
+            <br>
+            <label for="milk">Milk</label>
+            <input id="milk" type="checkbox" name="" value="">
+            <br>
+            <label for="butter">Butter</label>
+            <input id="butter" type="checkbox" name="" value="">
+            <br>
+            <label for="water">Water</label>
+            <input id="water" type="checkbox" name="" value="">
+
+            <h2>What size do you normally order? (Choose 1 option)</h2>
+
+            <label for="small">Small</label>
+            <input id="small" type="radio" name="size" value="" checked>
+            <label for="medium">Medium</label>
+            <input id="medium" type="radio" name="size" value="">
+            <label for="large">Large</label>
+            <input id="large" type="radio" name="size" value="">
+
+            <label for="cupsperday"><h2>How many cups of coffee do you drink per day, on average?</h2></label>
+            <select id="cupsperday" class="" name="">
+              <option value="btw0-1">Between 0-1 cups</option>
+              <option value="btw2-3">Between 2-3</option>
+              <option value="morethan3">More than 3 cups</option>
+            </select>
+
+            <h2>What is your fondest memory related to coffee?</h2>
+            <textarea name="name" rows="8" cols="80"></textarea>
+          </fieldset>
+          <br>
+          <button type="button" name="button" method="">Submit</button>
+        </form>
+    </body>
+</html>
